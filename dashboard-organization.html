@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>DashBoard Service Works</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- <link rel='stylesheet' href='assets/css/card.css' /> -->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Banner -->
+					<section class="main style2">
+						<div class="content">
+							<h1 id='welcomeHeader'>Welcome to your dashboard, Org! </h1>
+							<h4>Create events or update current ones</h4>
+						</div>
+					</section>
+
+          <section class="main">
+            <header class='large'>
+
+              <h2> See upcoming Events</h2>
+
+
+              <ul class="alt" id="upcomingEvents">
+
+              </ul>
+            </header>
+          </section>
+
+					<section class="main">
+						<header class="small">
+
+							<h2>Create an Event</h2>
+
+							<div class="inner special medium">
+								<form action="#" method="post">
+									<div class="field half">
+                    <label>Event Name</label>
+										<input name="name" id="eventName" placeholder="Name" type="text" />
+									</div>
+									<div class="field half">
+                    <label>Street Address</label>
+										<input name="address" id="eventAddress" placeholder="Event Address" type="text"></input>
+									</div>
+                  <div class="field third">
+                    <label>City</label>
+										<input name="city" id="eventCity" placeholder="Event City" type="text"></input>
+									</div>
+                  <div class="field third">
+                    <label>State</label>
+										<input name="state" id="eventState" placeholder="Event State" type="text" maxlength="2"></input>
+									</div>
+                  <div class="field third">
+                    <label>Zip Code</label>
+										<input name="zip" id="eventZip" placeholder="Event Zip Code" type="text" maxlength="5"></input>
+									</div>
+                  <div class="field half">
+                    <label>Date</label>
+										<input name="date" id="eventDate" placeholder="Event Date" type="date"></input>
+									</div>
+                  <div class="field half">
+                    <label>Hashtag</label>
+										<input name="hashtag" id="eventDate" placeholder="Event Hashtag" type="text"></input>
+									</div>
+									<ul class="actions">
+										<li><input value="Create Event!" class="button next" type="submit" /></li>
+									</ul>
+								</form>
+							</div>
+						</header>
+					</section>
+
+          <section class="main">
+            <header class='small'>
+
+              <h2> Verify previous Events</h2>
+
+              <h4>On page load</h4>
+              <ul class="alt" id="previousVolunteers">
+                <li>AJAX request for the VOLUNTEERS tied to previous events from this organizer</li>
+                <li>populate the #upcomingEvents with li events</li>
+                <li>Get the first four</li>
+                <li>and push them into this section</li>
+              </ul>
+            </header>
+          </section>
+
+
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/orgDashboard.js"></script>
+
+	</body>
+</html>
