@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 
   //populate the upcoming events
-  $.getJSON(eventURL, function(data) {
+  $.getJSON('https://s3-us-west-1.amazonaws.com/personalprojectfiles/events.json', function(data) {
     console.log(data);
     var orgEvents = data.filter(function(event) {
       return event.organizations_id === orgID;
